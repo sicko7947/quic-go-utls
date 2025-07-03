@@ -2,17 +2,18 @@ package main
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"log"
 	"net"
 
-	fuzzhandshake "github.com/quic-go/quic-go/fuzzing/handshake"
-	"github.com/quic-go/quic-go/fuzzing/internal/helper"
-	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/testdata"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
+	tls "github.com/bogdanfinn/utls"
+
+	fuzzhandshake "github.com/Dharmey747/quic-go-utls/fuzzing/handshake"
+	"github.com/Dharmey747/quic-go-utls/fuzzing/internal/helper"
+	"github.com/Dharmey747/quic-go-utls/internal/handshake"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/testdata"
+	"github.com/Dharmey747/quic-go-utls/internal/utils"
+	"github.com/Dharmey747/quic-go-utls/internal/wire"
 )
 
 const alpn = "fuzz"

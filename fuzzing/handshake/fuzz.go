@@ -4,7 +4,6 @@ import (
 	"context"
 	"crypto/ed25519"
 	"crypto/rand"
-	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"errors"
 	"fmt"
@@ -15,12 +14,14 @@ import (
 	"net"
 	"time"
 
-	"github.com/quic-go/quic-go/fuzzing/internal/helper"
-	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qtls"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls/fuzzing/internal/helper"
+	"github.com/Dharmey747/quic-go-utls/internal/handshake"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/qtls"
+	"github.com/Dharmey747/quic-go-utls/internal/utils"
+	"github.com/Dharmey747/quic-go-utls/internal/wire"
 )
 
 var (

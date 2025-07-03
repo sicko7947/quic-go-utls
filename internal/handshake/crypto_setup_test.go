@@ -4,7 +4,6 @@ import (
 	"context"
 	"crypto/ed25519"
 	"crypto/rand"
-	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"crypto/x509/pkix"
 	"errors"
@@ -13,11 +12,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/internal/testdata"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/qerr"
+	"github.com/Dharmey747/quic-go-utls/internal/testdata"
+	"github.com/Dharmey747/quic-go-utls/internal/utils"
+	"github.com/Dharmey747/quic-go-utls/internal/wire"
 
 	"github.com/stretchr/testify/require"
 )

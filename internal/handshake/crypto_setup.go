@@ -2,7 +2,6 @@ package handshake
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"errors"
 	"fmt"
 	"net"
@@ -10,12 +9,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
-	"github.com/quic-go/quic-go/logging"
-	"github.com/quic-go/quic-go/quicvarint"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/qerr"
+	"github.com/Dharmey747/quic-go-utls/internal/utils"
+	"github.com/Dharmey747/quic-go-utls/internal/wire"
+	"github.com/Dharmey747/quic-go-utls/logging"
+	"github.com/Dharmey747/quic-go-utls/quicvarint"
 )
 
 type quicVersionContextKey struct{}

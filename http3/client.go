@@ -12,9 +12,9 @@ import (
 
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/quicvarint"
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/quicvarint"
 
 	"github.com/quic-go/qpack"
 )

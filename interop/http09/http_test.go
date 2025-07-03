@@ -1,17 +1,19 @@
 package http09
 
 import (
-	"crypto/tls"
 	"fmt"
 	"io"
 	"net"
-	"net/http/httptest"
 	"testing"
+
+	"github.com/bogdanfinn/fhttp/httptest"
+
+	tls "github.com/bogdanfinn/utls"
 
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/internal/testdata"
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/internal/testdata"
 
 	"github.com/stretchr/testify/require"
 )

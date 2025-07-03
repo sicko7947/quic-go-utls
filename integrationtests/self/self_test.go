@@ -2,7 +2,6 @@ package self_test
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"flag"
 	"fmt"
@@ -15,12 +14,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/http3"
-	"github.com/quic-go/quic-go/integrationtests/tools"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/wire"
-	"github.com/quic-go/quic-go/logging"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/http3"
+	"github.com/Dharmey747/quic-go-utls/integrationtests/tools"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/wire"
+	"github.com/Dharmey747/quic-go-utls/logging"
 
 	"github.com/stretchr/testify/require"
 )

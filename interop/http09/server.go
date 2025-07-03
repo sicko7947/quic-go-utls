@@ -10,7 +10,7 @@ import (
 
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/quic-go/quic-go"
+	"github.com/Dharmey747/quic-go-utls"
 )
 
 const NextProto = "hq-interop"

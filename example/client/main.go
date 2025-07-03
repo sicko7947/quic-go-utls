@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"crypto/tls"
 	"crypto/x509"
 	"flag"
 	"io"
@@ -10,12 +9,14 @@ import (
 	"os"
 	"sync"
 
+	tls "github.com/bogdanfinn/utls"
+
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/http3"
-	"github.com/quic-go/quic-go/internal/testdata"
-	"github.com/quic-go/quic-go/qlog"
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/http3"
+	"github.com/Dharmey747/quic-go-utls/internal/testdata"
+	"github.com/Dharmey747/quic-go-utls/qlog"
 )
 
 func main() {

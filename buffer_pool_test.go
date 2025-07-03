@@ -3,7 +3,7 @@ package quic
 import (
 	"testing"
 
-	"github.com/quic-go/quic-go/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
 
 	"github.com/stretchr/testify/require"
 )

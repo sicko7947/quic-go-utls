@@ -2,7 +2,6 @@ package http3
 
 import (
 	"context"
-	"crypto/tls"
 	"errors"
 	"fmt"
 	"io"
@@ -14,12 +13,14 @@ import (
 	"sync"
 	"sync/atomic"
 
+	tls "github.com/bogdanfinn/utls"
+
 	http "github.com/bogdanfinn/fhttp"
 
 	"golang.org/x/net/http/httpguts"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
 )
 
 // Settings are HTTP/3 settings that apply to the underlying connection.

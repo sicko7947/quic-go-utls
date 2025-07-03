@@ -2,13 +2,14 @@ package handshake
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"errors"
 	"io"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/wire"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/wire"
 )
 
 var (

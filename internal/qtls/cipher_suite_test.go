@@ -1,12 +1,13 @@
 package qtls
 
 import (
-	"github.com/bogdanfinn/utls"
 	"fmt"
 	"net"
 	"testing"
 
-	"github.com/quic-go/quic-go/internal/testdata"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls/internal/testdata"
 
 	"github.com/stretchr/testify/require"
 )

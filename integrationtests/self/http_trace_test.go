@@ -2,7 +2,6 @@ package self_test
 
 import (
 	"context"
-	"crypto/tls"
 	"fmt"
 	"net"
 	"net/http/httptrace"
@@ -10,9 +9,11 @@ import (
 	"testing"
 	"time"
 
+	tls "github.com/bogdanfinn/utls"
+
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/quic-go/quic-go/http3"
+	"github.com/Dharmey747/quic-go-utls/http3"
 	"github.com/stretchr/testify/require"
 )
 

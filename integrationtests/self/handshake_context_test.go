@@ -2,14 +2,15 @@ package self_test
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"errors"
 	"net"
 	"testing"
 	"time"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/logging"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/logging"
 
 	"github.com/stretchr/testify/require"
 )

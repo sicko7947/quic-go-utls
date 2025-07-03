@@ -1,7 +1,6 @@
 package main
 
 import (
-	"crypto/tls"
 	"errors"
 	"flag"
 	"fmt"
@@ -11,17 +10,19 @@ import (
 	"strings"
 	"time"
 
+	tls "github.com/bogdanfinn/utls"
+
 	http "github.com/bogdanfinn/fhttp"
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/http3"
-	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qtls"
-	"github.com/quic-go/quic-go/interop/http09"
-	"github.com/quic-go/quic-go/interop/utils"
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/http3"
+	"github.com/Dharmey747/quic-go-utls/internal/handshake"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/qtls"
+	"github.com/Dharmey747/quic-go-utls/interop/http09"
+	"github.com/Dharmey747/quic-go-utls/interop/utils"
 )
 
 var errUnsupported = errors.New("unsupported test case")

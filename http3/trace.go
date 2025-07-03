@@ -1,13 +1,14 @@
 package http3
 
 import (
-	"github.com/bogdanfinn/utls"
 	"net"
 	"net/http/httptrace"
 	"net/textproto"
 	"time"
 
-	"github.com/quic-go/quic-go"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls"
 )
 
 func traceGetConn(trace *httptrace.ClientTrace, hostPort string) {

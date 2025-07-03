@@ -10,9 +10,9 @@ import (
 	"slices"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/quicvarint"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/qerr"
+	"github.com/Dharmey747/quic-go-utls/quicvarint"
 )
 
 // AdditionalTransportParametersClient are additional transport parameters that will be added

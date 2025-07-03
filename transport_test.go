@@ -3,7 +3,6 @@ package quic
 import (
 	"bytes"
 	"context"
-	"github.com/bogdanfinn/utls"
 	"errors"
 	"math"
 	"net"
@@ -13,12 +12,14 @@ import (
 	"testing"
 	"time"
 
-	mocklogging "github.com/quic-go/quic-go/internal/mocks/logging"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
-	"github.com/quic-go/quic-go/logging"
+	tls "github.com/bogdanfinn/utls"
+
+	mocklogging "github.com/Dharmey747/quic-go-utls/internal/mocks/logging"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/qerr"
+	"github.com/Dharmey747/quic-go-utls/internal/utils"
+	"github.com/Dharmey747/quic-go-utls/internal/wire"
+	"github.com/Dharmey747/quic-go-utls/logging"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

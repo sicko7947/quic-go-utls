@@ -4,14 +4,15 @@ import (
 	"context"
 	"crypto/ed25519"
 	"crypto/rand"
-	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"fmt"
 	"io"
 	"log"
 	"math/big"
 
-	"github.com/quic-go/quic-go"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls"
 )
 
 const addr = "localhost:4242"

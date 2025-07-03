@@ -3,7 +3,6 @@ package http3
 import (
 	"bytes"
 	"context"
-	"crypto/tls"
 	"fmt"
 	"io"
 	"log/slog"
@@ -12,13 +11,15 @@ import (
 	"testing"
 	"time"
 
+	tls "github.com/bogdanfinn/utls"
+
 	"github.com/bogdanfinn/fhttp/httptest"
 
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/internal/testdata"
-	"github.com/quic-go/quic-go/quicvarint"
+	"github.com/Dharmey747/quic-go-utls"
+	"github.com/Dharmey747/quic-go-utls/internal/testdata"
+	"github.com/Dharmey747/quic-go-utls/quicvarint"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

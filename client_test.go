@@ -2,11 +2,12 @@ package quic
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"net"
 	"runtime"
 	"testing"
 	"time"
+
+	tls "github.com/bogdanfinn/utls"
 
 	"github.com/stretchr/testify/require"
 )

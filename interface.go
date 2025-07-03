@@ -2,14 +2,15 @@ package quic
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"errors"
 	"net"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/logging"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls/internal/handshake"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/logging"
 )
 
 // The StreamID is the ID of a QUIC stream.

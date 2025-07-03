@@ -2,11 +2,12 @@ package quic
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"errors"
 	"net"
 
-	"github.com/quic-go/quic-go/internal/protocol"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
 )
 
 // make it possible to mock connection ID for initial generation in the tests

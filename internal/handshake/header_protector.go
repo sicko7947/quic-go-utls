@@ -3,13 +3,14 @@ package handshake
 import (
 	"crypto/aes"
 	"crypto/cipher"
-	"github.com/bogdanfinn/utls"
 	"encoding/binary"
 	"fmt"
 
+	tls "github.com/bogdanfinn/utls"
+
 	"golang.org/x/crypto/chacha20"
 
-	"github.com/quic-go/quic-go/internal/protocol"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
 )
 
 type headerProtector interface {

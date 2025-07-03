@@ -2,15 +2,16 @@ package self_test
 
 import (
 	"context"
-	"github.com/bogdanfinn/utls"
 	"net"
 	"sync/atomic"
 	"testing"
 	"time"
 
-	"github.com/quic-go/quic-go"
-	quicproxy "github.com/quic-go/quic-go/integrationtests/tools/proxy"
-	"github.com/quic-go/quic-go/internal/protocol"
+	tls "github.com/bogdanfinn/utls"
+
+	"github.com/Dharmey747/quic-go-utls"
+	quicproxy "github.com/Dharmey747/quic-go-utls/integrationtests/tools/proxy"
+	"github.com/Dharmey747/quic-go-utls/internal/protocol"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
