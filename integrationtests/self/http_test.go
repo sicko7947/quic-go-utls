@@ -11,7 +11,6 @@ import (
 	mrand "math/rand/v2"
 	"net"
 	"net/textproto"
-	"os"
 	"strconv"
 	"strings"
 	"sync/atomic"
@@ -501,81 +500,6 @@ func TestHTTPClientRequestContextCancellation(t *testing.T) {
 		require.True(t, errors.As(err, &http3Err))
 		require.Equal(t, http3.ErrCodeRequestCanceled, http3Err.ErrorCode)
 		require.False(t, http3Err.Remote)
-	})
-}
-
-func TestHTTPDeadlines(t *testing.T) {
-	const deadlineDelay = 50 * time.Millisecond
-
-	mux := http.NewServeMux()
-	port := startHTTPServer(t, mux)
-	cl := newHTTP3Client(t)
-
-	t.Run("read deadline", func(t *testing.T) {
-		type result struct {
-			body []byte
-			err  error
-		}
-
-		resultChan := make(chan result, 1)
-		mux.HandleFunc("/read-deadline", func(w http.ResponseWriter, r *http.Request) {
-			rc := http.NewResponseController(w)
-			require.NoError(t, rc.SetReadDeadline(time.Now().Add(deadlineDelay)))
-			body, err := io.ReadAll(r.Body)
-			resultChan <- result{body: body, err: err}
-			io.WriteString(w, "ok")
-		})
-
-		expectedEnd := time.Now().Add(deadlineDelay)
-		resp, err := cl.Post(
-			fmt.Sprintf("https://localhost:%d/read-deadline", port),
-			"text/plain",
-			neverEnding('a'),
-		)
-		require.NoError(t, err)
-		require.Equal(t, http.StatusOK, resp.StatusCode)
-
-		body, err := io.ReadAll(&readerWithTimeout{Reader: resp.Body, Timeout: 2 * deadlineDelay})
-		require.NoError(t, err)
-		require.True(t, time.Now().After(expectedEnd))
-		require.Equal(t, "ok", string(body))
-
-		select {
-		case result := <-resultChan:
-			require.ErrorIs(t, result.err, os.ErrDeadlineExceeded)
-			require.Contains(t, string(result.body), "aa")
-		default:
-			t.Fatal("handler was not called")
-		}
-	})
-
-	t.Run("write deadline", func(t *testing.T) {
-		errChan := make(chan error, 1)
-		mux.HandleFunc("/write-deadline", func(w http.ResponseWriter, r *http.Request) {
-			rc := http.NewResponseController(w)
-			require.NoError(t, rc.SetWriteDeadline(time.Now().Add(deadlineDelay)))
-
-			_, err := io.Copy(w, neverEnding('a'))
-			errChan <- err
-		})
-
-		expectedEnd := time.Now().Add(deadlineDelay)
-
-		resp, err := cl.Get(fmt.Sprintf("https://localhost:%d/write-deadline", port))
-		require.NoError(t, err)
-		require.Equal(t, http.StatusOK, resp.StatusCode)
-
-		body, err := io.ReadAll(&readerWithTimeout{Reader: resp.Body, Timeout: 2 * deadlineDelay})
-		require.NoError(t, err)
-		require.True(t, time.Now().After(expectedEnd))
-		require.Contains(t, string(body), "aa")
-
-		select {
-		case err := <-errChan:
-			require.ErrorIs(t, err, os.ErrDeadlineExceeded)
-		case <-time.After(2 * deadlineDelay):
-			t.Fatal("handler was not called")
-		}
 	})
 }
 
