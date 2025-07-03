@@ -3,7 +3,7 @@ package quic
 import (
 	"bytes"
 	"context"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"errors"
 	"fmt"
 	"io"

@@ -6,10 +6,11 @@ import (
 	"encoding/binary"
 	"fmt"
 	"io"
-	"net/http"
 	"net/url"
 	"testing"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"

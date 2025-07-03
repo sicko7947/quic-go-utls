@@ -5,12 +5,13 @@ import (
 	"context"
 	"io"
 	"math"
-	"net/http"
 	"net/http/httptest"
 	"net/http/httptrace"
 	"strings"
 	"testing"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/internal/protocol"

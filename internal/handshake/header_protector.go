@@ -3,7 +3,7 @@ package handshake
 import (
 	"crypto/aes"
 	"crypto/cipher"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"encoding/binary"
 	"fmt"
 

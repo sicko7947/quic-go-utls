@@ -3,7 +3,7 @@ package quic
 import (
 	"context"
 	"crypto/rand"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"errors"
 	"net"
 	"slices"

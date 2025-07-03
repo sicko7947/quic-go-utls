@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"io"
 	"net"
-	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/internal/testdata"

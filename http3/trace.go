@@ -1,7 +1,7 @@
 package http3
 
 import (
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"net"
 	"net/http/httptrace"
 	"net/textproto"

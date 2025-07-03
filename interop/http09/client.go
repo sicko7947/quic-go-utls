@@ -7,9 +7,10 @@ import (
 	"io"
 	"log"
 	"net"
-	"net/http"
 	"strings"
 	"sync"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"golang.org/x/net/idna"
 

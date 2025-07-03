@@ -1,7 +1,7 @@
 package qerr
 
 import (
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"fmt"
 )
 

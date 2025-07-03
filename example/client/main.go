@@ -7,9 +7,10 @@ import (
 	"flag"
 	"io"
 	"log"
-	"net/http"
 	"os"
 	"sync"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"

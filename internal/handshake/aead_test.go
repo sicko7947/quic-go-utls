@@ -4,7 +4,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"fmt"
 	"testing"
 

@@ -3,9 +3,10 @@ package http3
 import (
 	"bytes"
 	"io"
-	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/qpack"
 

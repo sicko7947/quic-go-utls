@@ -6,7 +6,7 @@ import (
 	"context"
 	"crypto/ecdh"
 	"crypto/rand"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"encoding/binary"
 	"io"
 	mrand "math/rand/v2"

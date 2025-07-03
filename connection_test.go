@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"crypto/rand"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"errors"
 	"net"
 	"net/netip"

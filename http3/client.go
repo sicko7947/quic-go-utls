@@ -6,10 +6,11 @@ import (
 	"fmt"
 	"io"
 	"log/slog"
-	"net/http"
 	"net/http/httptrace"
 	"net/textproto"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/internal/protocol"

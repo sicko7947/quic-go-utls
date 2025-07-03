@@ -7,11 +7,12 @@ import (
 	"io"
 	"log/slog"
 	"net"
-	"net/http"
 	"net/http/httptrace"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/internal/protocol"

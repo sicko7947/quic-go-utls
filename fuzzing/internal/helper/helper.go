@@ -4,7 +4,7 @@ import (
 	"crypto"
 	"crypto/rand"
 	"crypto/sha1"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/hex"

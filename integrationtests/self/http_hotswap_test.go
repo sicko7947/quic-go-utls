@@ -3,10 +3,11 @@ package self_test
 import (
 	"io"
 	"net"
-	"net/http"
 	"strconv"
 	"testing"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"

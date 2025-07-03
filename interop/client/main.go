@@ -7,10 +7,11 @@ import (
 	"fmt"
 	"io"
 	"log"
-	"net/http"
 	"os"
 	"strings"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"golang.org/x/sync/errgroup"
 

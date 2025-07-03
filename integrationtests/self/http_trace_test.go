@@ -5,11 +5,12 @@ import (
 	"crypto/tls"
 	"fmt"
 	"net"
-	"net/http"
 	"net/http/httptrace"
 	"net/textproto"
 	"testing"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go/http3"
 	"github.com/stretchr/testify/require"

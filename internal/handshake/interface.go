@@ -2,7 +2,7 @@ package handshake
 
 import (
 	"context"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"errors"
 	"io"
 	"time"

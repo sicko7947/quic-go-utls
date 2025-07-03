@@ -2,8 +2,9 @@ package http3
 
 import (
 	"fmt"
-	"net/http"
 	"testing"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/qpack"
 	"github.com/stretchr/testify/require"

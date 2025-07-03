@@ -2,7 +2,7 @@ package versionnegotiation
 
 import (
 	"context"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"flag"
 	"os"

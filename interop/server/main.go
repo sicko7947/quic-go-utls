@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"net/http"
 	"os"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"

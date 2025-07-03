@@ -6,10 +6,12 @@ import (
 	"context"
 	"errors"
 	"io"
-	"net/http"
-	"net/http/httptest"
 	"testing"
 	"time"
+
+	"github.com/bogdanfinn/fhttp/httptest"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/qpack"
 	"github.com/quic-go/quic-go"

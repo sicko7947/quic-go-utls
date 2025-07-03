@@ -13,11 +13,12 @@ import (
 	"io"
 	"math/big"
 	"net"
-	"net/http"
 	"os"
 	"strconv"
 	"testing"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/qpack"
 	"github.com/quic-go/quic-go"

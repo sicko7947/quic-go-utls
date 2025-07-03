@@ -1,7 +1,7 @@
 package testdata
 
 import (
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"os"
 	"path"

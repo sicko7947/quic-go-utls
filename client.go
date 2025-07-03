@@ -2,7 +2,7 @@ package quic
 
 import (
 	"context"
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"errors"
 	"net"
 

@@ -4,10 +4,11 @@ import (
 	"context"
 	"io"
 	"log"
-	"net/http"
 	"net/url"
 	"runtime"
 	"strings"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"github.com/quic-go/quic-go"
 )

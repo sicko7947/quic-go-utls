@@ -11,7 +11,6 @@ import (
 	"io"
 	mrand "math/rand/v2"
 	"net"
-	"net/http"
 	"net/http/httptrace"
 	"net/textproto"
 	"os"
@@ -20,6 +19,8 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"golang.org/x/sync/errgroup"
 

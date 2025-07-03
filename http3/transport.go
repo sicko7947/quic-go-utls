@@ -8,12 +8,13 @@ import (
 	"io"
 	"log/slog"
 	"net"
-	"net/http"
 	"net/http/httptrace"
 	"net/url"
 	"strings"
 	"sync"
 	"sync/atomic"
+
+	http "github.com/bogdanfinn/fhttp"
 
 	"golang.org/x/net/http/httpguts"
 

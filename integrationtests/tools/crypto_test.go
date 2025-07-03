@@ -1,7 +1,7 @@
 package tools
 
 import (
-	"crypto/tls"
+	"github.com/bogdanfinn/utls"
 	"crypto/x509"
 	"io"
 	"net"
