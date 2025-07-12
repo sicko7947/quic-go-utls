@@ -198,6 +198,7 @@ func (t *Transport) roundTripOpt(req *http.Request, opt RoundTripOpt) (*http.Res
 			// If the header is magic key, the headers would have been ordered
 			// by this step. It is ok to delete and not raise an error
 			if k == http.HeaderOrderKey || k == http.PHeaderOrderKey {
+				delete(req.Header, k)
 				continue
 			}
 

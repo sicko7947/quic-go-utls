@@ -44,10 +44,6 @@ func parseHeaders(headers []qpack.HeaderField, isRequest bool) (header, error) {
 	var readFirstRegularHeader, readContentLength bool
 	var contentLengthStr string
 	for _, h := range headers {
-		if h.Name == http.HeaderOrderKey || h.Name == http.PHeaderOrderKey {
-			continue
-		}
-
 		// field names need to be lowercase, see section 4.2 of RFC 9114
 		if strings.ToLower(h.Name) != h.Name {
 			return header{}, fmt.Errorf("header field is not lower-case: %s", h.Name)
