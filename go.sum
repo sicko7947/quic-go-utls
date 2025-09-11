@@ -14,10 +14,10 @@ github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239/go.mod h1:2FmKhYU
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
-github.com/bogdanfinn/fhttp v0.6.0 h1:24JoDnE43tq3RdK99K1M5mxa2JyntKr6WcDsy1KdA0o=
-github.com/bogdanfinn/fhttp v0.6.0/go.mod h1:ZR1hRfxsOd/j/C8RnwyNXA90DxkrHB3Y1nuCD1YlbdI=
-github.com/bogdanfinn/utls v1.7.3-barnius h1:2p9riIoGHI85eVDebhHm58qLokyJ8bFEn26wg24S1uU=
-github.com/bogdanfinn/utls v1.7.3-barnius/go.mod h1:SUn0CoHGVp/akGNuaqh99yvovu64PCP2LbWd3Z/Laic=
+github.com/bogdanfinn/fhttp v0.6.2 h1:qmFu9fxKmSRR+tcKfgxthmiu365tYspz3Mi404ytZPE=
+github.com/bogdanfinn/fhttp v0.6.2/go.mod h1:0irhEtS+wJ4m8SGhWO0wmbXMjCbH3WZpU6UcymRYKuk=
+github.com/bogdanfinn/utls v1.7.4-barnius h1:1ldNJEpKdkrx7b8hEc6MRkjnZIF8f2lDcTtRVxqY9zw=
+github.com/bogdanfinn/utls v1.7.4-barnius/go.mod h1:SUn0CoHGVp/akGNuaqh99yvovu64PCP2LbWd3Z/Laic=
 github.com/bradfitz/go-smtpd v0.0.0-20170404230938-deb6d6237625/go.mod h1:HYsPBTaaSFSlLx/70C2HPIMNZpVV8+vt/A+FMnYP11g=
 github.com/buger/jsonparser v0.0.0-20181115193947-bf1c66bbce23/go.mod h1:bbYlZJ7hK1yFx9hf58LP0zeX7UjIGs20ufpu3evjr+s=
 github.com/cespare/xxhash/v2 v2.2.0 h1:DC2CZ1Ep5Y4k3ZQ899DldepgrayRUGE6BBZ/cd9Cj44=

@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dharmey747/quic-go-utls"
-	"github.com/Dharmey747/quic-go-utls/qlog"
+	"github.com/bogdanfinn/quic-go-utls"
+	"github.com/bogdanfinn/quic-go-utls/qlog"
 
 	"github.com/stretchr/testify/require"
 )

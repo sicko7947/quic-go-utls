@@ -10,8 +10,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
-	"github.com/Dharmey747/quic-go-utls/internal/utils"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/internal/utils"
 )
 
 type connCapabilities struct {
@@ -58,7 +58,7 @@ func wrapConn(pc net.PacketConn) (rawConn, error) {
 				if disable, _ := strconv.ParseBool(os.Getenv("QUIC_GO_DISABLE_RECEIVE_BUFFER_WARNING")); disable {
 					return
 				}
-				log.Printf("%s. See https://github.com/Dharmey747/quic-go-utls/wiki/UDP-Buffer-Sizes for details.", err)
+				log.Printf("%s. See https://github.com/bogdanfinn/quic-go-utls/wiki/UDP-Buffer-Sizes for details.", err)
 			})
 		}
 	}
@@ -68,7 +68,7 @@ func wrapConn(pc net.PacketConn) (rawConn, error) {
 				if disable, _ := strconv.ParseBool(os.Getenv("QUIC_GO_DISABLE_RECEIVE_BUFFER_WARNING")); disable {
 					return
 				}
-				log.Printf("%s. See https://github.com/Dharmey747/quic-go-utls/wiki/UDP-Buffer-Sizes for details.", err)
+				log.Printf("%s. See https://github.com/bogdanfinn/quic-go-utls/wiki/UDP-Buffer-Sizes for details.", err)
 			})
 		}
 	}

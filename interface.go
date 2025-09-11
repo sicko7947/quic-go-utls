@@ -8,9 +8,9 @@ import (
 
 	tls "github.com/bogdanfinn/utls"
 
-	"github.com/Dharmey747/quic-go-utls/internal/handshake"
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
-	"github.com/Dharmey747/quic-go-utls/logging"
+	"github.com/bogdanfinn/quic-go-utls/internal/handshake"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/logging"
 )
 
 // The StreamID is the ID of a QUIC stream.

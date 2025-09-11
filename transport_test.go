@@ -14,12 +14,12 @@ import (
 
 	tls "github.com/bogdanfinn/utls"
 
-	mocklogging "github.com/Dharmey747/quic-go-utls/internal/mocks/logging"
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
-	"github.com/Dharmey747/quic-go-utls/internal/qerr"
-	"github.com/Dharmey747/quic-go-utls/internal/utils"
-	"github.com/Dharmey747/quic-go-utls/internal/wire"
-	"github.com/Dharmey747/quic-go-utls/logging"
+	mocklogging "github.com/bogdanfinn/quic-go-utls/internal/mocks/logging"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/internal/qerr"
+	"github.com/bogdanfinn/quic-go-utls/internal/utils"
+	"github.com/bogdanfinn/quic-go-utls/internal/wire"
+	"github.com/bogdanfinn/quic-go-utls/logging"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

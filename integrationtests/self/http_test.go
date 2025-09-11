@@ -25,9 +25,9 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/Dharmey747/quic-go-utls"
-	"github.com/Dharmey747/quic-go-utls/http3"
-	quicproxy "github.com/Dharmey747/quic-go-utls/integrationtests/tools/proxy"
+	"github.com/bogdanfinn/quic-go-utls"
+	"github.com/bogdanfinn/quic-go-utls/http3"
+	quicproxy "github.com/bogdanfinn/quic-go-utls/integrationtests/tools/proxy"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

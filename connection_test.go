@@ -13,17 +13,17 @@ import (
 
 	tls "github.com/bogdanfinn/utls"
 
-	"github.com/Dharmey747/quic-go-utls/internal/ackhandler"
-	"github.com/Dharmey747/quic-go-utls/internal/flowcontrol"
-	"github.com/Dharmey747/quic-go-utls/internal/handshake"
-	"github.com/Dharmey747/quic-go-utls/internal/mocks"
-	mockackhandler "github.com/Dharmey747/quic-go-utls/internal/mocks/ackhandler"
-	mocklogging "github.com/Dharmey747/quic-go-utls/internal/mocks/logging"
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
-	"github.com/Dharmey747/quic-go-utls/internal/qerr"
-	"github.com/Dharmey747/quic-go-utls/internal/utils"
-	"github.com/Dharmey747/quic-go-utls/internal/wire"
-	"github.com/Dharmey747/quic-go-utls/logging"
+	"github.com/bogdanfinn/quic-go-utls/internal/ackhandler"
+	"github.com/bogdanfinn/quic-go-utls/internal/flowcontrol"
+	"github.com/bogdanfinn/quic-go-utls/internal/handshake"
+	"github.com/bogdanfinn/quic-go-utls/internal/mocks"
+	mockackhandler "github.com/bogdanfinn/quic-go-utls/internal/mocks/ackhandler"
+	mocklogging "github.com/bogdanfinn/quic-go-utls/internal/mocks/logging"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/internal/qerr"
+	"github.com/bogdanfinn/quic-go-utls/internal/utils"
+	"github.com/bogdanfinn/quic-go-utls/internal/wire"
+	"github.com/bogdanfinn/quic-go-utls/logging"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -1660,7 +1660,7 @@ func TestConnectionPacketPacing(t *testing.T) {
 }
 
 // When the send queue blocks, we need to reset the pacing timer, otherwise the run loop might busy-loop.
-// See https://github.com/Dharmey747/quic-go-utls/pull/4943 for more details.
+// See https://github.com/bogdanfinn/quic-go-utls/pull/4943 for more details.
 func TestConnectionPacingAndSendQueue(t *testing.T) {
 	mockCtrl := gomock.NewController(t)
 	sph := mockackhandler.NewMockSentPacketHandler(mockCtrl)

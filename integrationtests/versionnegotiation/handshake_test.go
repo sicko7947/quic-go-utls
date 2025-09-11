@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dharmey747/quic-go-utls"
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
-	"github.com/Dharmey747/quic-go-utls/logging"
+	"github.com/bogdanfinn/quic-go-utls"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/logging"
 
 	"github.com/stretchr/testify/require"
 )

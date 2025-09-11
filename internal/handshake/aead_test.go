@@ -9,7 +9,7 @@ import (
 
 	tls "github.com/bogdanfinn/utls"
 
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
 
 	"github.com/stretchr/testify/require"
 )

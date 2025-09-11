@@ -9,7 +9,7 @@ import (
 
 	tls "github.com/bogdanfinn/utls"
 
-	"github.com/Dharmey747/quic-go-utls"
+	"github.com/bogdanfinn/quic-go-utls"
 )
 
 func traceGetConn(trace *httptrace.ClientTrace, hostPort string) {

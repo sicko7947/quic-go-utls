@@ -8,9 +8,9 @@ import (
 
 	tls "github.com/bogdanfinn/utls"
 
-	"github.com/Dharmey747/quic-go-utls"
-	"github.com/Dharmey747/quic-go-utls/integrationtests/tools"
-	"github.com/Dharmey747/quic-go-utls/logging"
+	"github.com/bogdanfinn/quic-go-utls"
+	"github.com/bogdanfinn/quic-go-utls/integrationtests/tools"
+	"github.com/bogdanfinn/quic-go-utls/logging"
 )
 
 var (

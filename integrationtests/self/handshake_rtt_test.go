@@ -9,8 +9,8 @@ import (
 
 	tls "github.com/bogdanfinn/utls"
 
-	"github.com/Dharmey747/quic-go-utls"
-	quicproxy "github.com/Dharmey747/quic-go-utls/integrationtests/tools/proxy"
+	"github.com/bogdanfinn/quic-go-utls"
+	quicproxy "github.com/bogdanfinn/quic-go-utls/integrationtests/tools/proxy"
 
 	"github.com/stretchr/testify/require"
 )

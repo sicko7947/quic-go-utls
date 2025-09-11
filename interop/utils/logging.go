@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Dharmey747/quic-go-utls"
-	"github.com/Dharmey747/quic-go-utls/internal/utils"
-	"github.com/Dharmey747/quic-go-utls/logging"
-	"github.com/Dharmey747/quic-go-utls/qlog"
+	"github.com/bogdanfinn/quic-go-utls"
+	"github.com/bogdanfinn/quic-go-utls/internal/utils"
+	"github.com/bogdanfinn/quic-go-utls/logging"
+	"github.com/bogdanfinn/quic-go-utls/qlog"
 )
 
 // GetSSLKeyLog creates a file for the TLS key log

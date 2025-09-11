@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
-	"github.com/Dharmey747/quic-go-utls/internal/qerr"
-	"github.com/Dharmey747/quic-go-utls/logging"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/internal/qerr"
+	"github.com/bogdanfinn/quic-go-utls/logging"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

@@ -3,10 +3,10 @@ package quic
 import (
 	"slices"
 
-	"github.com/Dharmey747/quic-go-utls/internal/ackhandler"
-	"github.com/Dharmey747/quic-go-utls/internal/protocol"
-	"github.com/Dharmey747/quic-go-utls/internal/wire"
-	"github.com/Dharmey747/quic-go-utls/logging"
+	"github.com/bogdanfinn/quic-go-utls/internal/ackhandler"
+	"github.com/bogdanfinn/quic-go-utls/internal/protocol"
+	"github.com/bogdanfinn/quic-go-utls/internal/wire"
+	"github.com/bogdanfinn/quic-go-utls/logging"
 )
 
 // ConvertFrame converts a wire.Frame into a logging.Frame.

@@ -14,7 +14,7 @@ import (
 
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/Dharmey747/quic-go-utls/http3"
+	"github.com/bogdanfinn/quic-go-utls/http3"
 	"github.com/stretchr/testify/require"
 )
 

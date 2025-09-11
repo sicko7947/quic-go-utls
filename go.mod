@@ -1,12 +1,12 @@
-module github.com/Dharmey747/quic-go-utls
+module github.com/bogdanfinn/quic-go-utls
 
 go 1.24.1
 
 toolchain go1.24.4
 
 require (
-	github.com/bogdanfinn/fhttp v0.6.0
-	github.com/bogdanfinn/utls v1.7.3-barnius
+	github.com/bogdanfinn/fhttp v0.6.2
+	github.com/bogdanfinn/utls v1.7.4-barnius
 	github.com/francoispqt/gojay v1.2.13
 	github.com/prometheus/client_golang v1.19.1
 	github.com/quic-go/qpack v0.5.1

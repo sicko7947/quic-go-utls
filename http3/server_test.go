@@ -17,9 +17,9 @@ import (
 
 	http "github.com/bogdanfinn/fhttp"
 
-	"github.com/Dharmey747/quic-go-utls"
-	"github.com/Dharmey747/quic-go-utls/internal/testdata"
-	"github.com/Dharmey747/quic-go-utls/quicvarint"
+	"github.com/bogdanfinn/quic-go-utls"
+	"github.com/bogdanfinn/quic-go-utls/internal/testdata"
+	"github.com/bogdanfinn/quic-go-utls/quicvarint"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
